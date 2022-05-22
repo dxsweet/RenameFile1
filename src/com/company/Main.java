@@ -5,7 +5,7 @@ import java.io.*;
 public class Main{
 
     public static void main(String[] args) {
-        File dir = new File("/home/dxsweet/sdc1/Education/2java/尚硅谷雷神SpringBoot2零基础入门springboot全套完整版_spring_boot2_");
+        File dir = new File("/home/dxsweet/sdc1/Education/0java/马士兵仅用30小时就把计算机底层原理_操作系统_数据结构和计算机网络融会贯通_相互联系起来了_计算机科学与软件工程专业的Java程序员必会_");
         for(File file : dir.listFiles()){
 //            System.out.println(file.getName());
             String[] oldNames = file.getName().split("_",2);
