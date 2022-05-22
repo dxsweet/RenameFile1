@@ -5,7 +5,7 @@ import java.io.*;
 public class Main{
 
     public static void main(String[] args) {
-        File dir = new File("/home/dxsweet/sdc1/Education/0java/2022年全网首发_价值200W的_从Java零基础小白到阿里P8级架构师_800集全套教学视频_免费分享给大家");
+        File dir = new File("/home/dxsweet/sdc1/Education/2java/尚硅谷雷神SpringBoot2零基础入门springboot全套完整版_spring_boot2_");
         for(File file : dir.listFiles()){
 //            System.out.println(file.getName());
             String[] oldNames = file.getName().split("_",2);
@@ -14,11 +14,11 @@ public class Main{
             File newFile = new File(dir.getAbsolutePath() + "/" + newName);
 //            System.out.println(newaName);
             boolean flag = file.renameTo(newFile);
-            if (flag == true){
-                System.out.println(file.getName() + "已完成");
+            if (flag){
+                System.out.println(file.getName() + " has been done ");
             }
             else {
-                System.out.println(file.getName() + "失败");
+                System.out.println(file.getName() + " has been failed ");
             }
         }
 
