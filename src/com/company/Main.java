@@ -1,11 +1,14 @@
 package com.company;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class Main{
 
     public static void main(String[] args) {
-        File dir = new File("/home/dxsweet/sdc1/Education/0java/马士兵仅用30小时就把计算机底层原理_操作系统_数据结构和计算机网络融会贯通_相互联系起来了_计算机科学与软件工程专业的Java程序员必会_");
+        Scanner scn = new Scanner(System.in);
+        String pnm = scn.nextLine();
+        File dir = new File(pnm);
         for(File file : dir.listFiles()){
 //            System.out.println(file.getName());
             String[] oldNames = file.getName().split("_",2);
